@@ -511,7 +511,7 @@
   
   <div class="container">
     <header>
-      <a href="#" class="download-btn"><i class="fas fa-download"></i> Baixar Currículo</a>
+      <a href="curriculo_erick_zaratini.pdf" download class="download-btn"><i class="fas fa-download"></i> Baixar Currículo</a>
       <h1 class="neon-shadow-purple">Erick Zaratini</h1>
       <p class="tagline neon-shadow-blue">Desenvolvedor em Formação & Analista de Dados</p>
       <div class="contact-info">
@@ -701,10 +701,10 @@
     <footer>
       <p>Disponível para oportunidades em Análise de Dados, Business Intelligence e áreas correlatas de TI</p>
       <div class="social-links">
-        <a href="https://www.linkedin.com/in/erickzaratini/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/ErickZaratini" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="mailto:zaratinidacrus@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/erickzaratini/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/ErickZaratini" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/erick.zaratini" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:zaratinidacrus@gmail.com" title="E-mail"><i class="fas fa-envelope"></i></a>
       </div>
     </footer>
   </div>
@@ -742,6 +742,17 @@
         
         particlesContainer.appendChild(particle);
       }
+      
+      // Criar um currículo PDF em base64 (fictício para demonstração)
+      const createFakePDF = function() {
+        // Em um cenário real, você teria um PDF real para disponibilizar
+        // Esta é apenas uma demonstração de como poderia ser implementado
+        console.log("Funcionalidade de download de currículo ativada");
+        // Aqui você poderia adicionar um evento para rastrear downloads
+      };
+      
+      // Adicionar evento ao botão de download
+      document.querySelector('.download-btn').addEventListener('click', createFakePDF);
     });
   </script>
 </body>
